@@ -1,10 +1,10 @@
 import  express  from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import userRouter from "./routes/user-router";
+import userRouter from "./routes/user-router.js";
 import adminRouter from "./routes/admin-router.js";
-import movieRouter from "./routes/movie-router";
-import bookingsRouter from "./routes/booking-router";
+import movieRouter from "./routes/movie-router.js";
+import bookingsRouter from "./routes/booking-router.js";
 import cors from "cors";
 
 
@@ -21,7 +21,7 @@ app.use(express.json())
 
 mongoose
   .connect(
-    `mongodb+srv://gondechinmay:gondechinmay@cluster0.nnjycko.mongodb.net/?retryWrites=true&w=majority`
+    "mongodb+srv://user-09:user%40123@user-pro.nvsbeqk.mongodb.net/user-pro?retryWrites=true&w=majority&appName=user-pro"
   )
   .then(() =>
     app.listen(5000, () =>
